@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+           /* background-color: blue;  */
+           }
+
+           /* Class Selector */
+        .blue{
+            background-color: rgb(156, 156, 255);
+        }
+
+        /* ID Selector */
+        #green {
+            background-color: rgb(107, 225, 107);
+        }
+
+        /* Child Selector */
+        div > p {
+            color: rgb(0, 0, 0);
+            background-color: grey;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: rgb(0, 0, 0);
+            background-color: gray;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: rgb(244, 150, 216);
+        }
+        a:link {
+            color: rgb(7, 255, 24);
+        }
+        a:active {
+            background-color: rgb(0, 0, 0);
+        }
+        a:hover {
+            background-color: rgb(2, 67, 61);
+        }
+        
+        p:first-child {
+            background-color: rgb(231, 166, 105);
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+          <p>I am First</p>
+          <p>I am Second</p>
+    </main>
+    <div class="blue">
+        I am Div
+        <article>
+        <p>
+            I am a paragraph inside a div with child selector.
+        </p>
+        </article>
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+   <a target="_blank" href="https://www.google.com"> Go to Google</a>
+   <a target="_blank" href="https://www.facebook3.com"> Go to Facebook</a>
+</body>
+</html>

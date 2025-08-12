@@ -1,0 +1,22 @@
+.container {
+    height: 488px;
+    width: 466px;
+    border: 2px solid black;
+    background-position: center center;
+    background-clip: border-box;
+    /* background-color: rgb(228, 250, 250); */
+    background-image: url(https://imgs.search.brave.com/FoNCo5MG8w72xHjHq40tiB9SEENb0BSb9U6XqSHzJOs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzk0Lzk4LzMx/LzM2MF9GXzI5NDk4/MzEzN19ySFhadTRm/a2VLeEFtS3JQWUNZ/T1VqMkN6Sld3M3cy/bC5qcGc);
+    background-repeat:no-repeat;
+
+}
+
+/* img {
+    width: 466px;
+    height: 488px;
+    object-fit: contain;
+    object-fit: cover;
+    object-fit: fill;
+    object-fit: scale-down;
+    object-position: 10px 20px;
+    object-position: bottom right;
+} */

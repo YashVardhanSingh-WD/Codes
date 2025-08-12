@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x="a"] {
+            color: green;
+        }
+
+        /* The specificity of this selector is 1 + 10= 11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+
+        /* The specificity of this selector is 100 */
+        /* #yash {
+            background-color: blue;
+        } */
+        
+        .pgolden {
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a" id="yash">CSS Specificity</h1>
+        <p class="pgolden">
+            In the quiet whispers of a golden morning, nature unfolds its serene beauty. The sun paints the skies in strokes of amber and crimson, while a soft breeze embraces blooming flowers. Birds sing a melody that stirs the heart, reminding us of life’s simple wonders. In this moment, peace finds its home.
+        </p>
+    </div>
+</body>
+
+</html>
